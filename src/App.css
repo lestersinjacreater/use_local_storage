@@ -1,0 +1,117 @@
+
+/* Basic reset for body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  position: absolute;
+  right: 20%;
+  left: 20%;
+}
+
+/* Container styles */
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+form button[type="button"] {
+  background-color: #dc3545;
+}
+
+form button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+/* User list styles */
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.user {
+  background-color: #e9ecef;
+  border-radius: 8px;
+  padding: 15px;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.user:hover {
+  transform: translateY(-5px);
+}
+
+/* User info styles */
+.user p {
+  margin: 5px 0;
+}
+
+/* No data message */
+.no-data {
+  text-align: center;
+  font-size: 18px;
+  color: #dc3545;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .user {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .user {
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form input[type="text"] {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
